@@ -95,7 +95,7 @@ class UriUtils {
             String[] projection = {MediaStore.MediaColumns.SIZE};
             Cursor cursor = context.getContentResolver().query(uri, projection, null, null, null);
             if (cursor != null) {
-                long size = -1;
+                long size = 0;
                 if (cursor.moveToFirst()) {
                     if (cursor.getColumnCount() > 0) {
                         size = cursor.getLong(0);
@@ -107,7 +107,7 @@ class UriUtils {
         } else if (SCHEME_FILE.equals(uri.getScheme().toLowerCase())) {
             return new File(uri.getPath()).length();
         }
-        return -1;
+        return 0;
     }
 
     int getOrientationFromMediaStore(Context context, Uri uri) {
