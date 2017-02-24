@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UriAnalyzer</string>
+    <string name="action_pick">ACTION_PICK</string>
+    <string name="action_get_content">ACTION_GET_CONTENT</string>
+    <string name="action_open_document">ACTION_OPEN_DOCUMENT</string>
+    <string name="share_file_uri">Share (Uri.fromFile)</string>
+    <string name="share_content_uri">Share (FileProvider.getUriForFile)</string>
+    <string name="failed_to_grant_privilege">Failed to grant privilege.</string>
+</resources>
